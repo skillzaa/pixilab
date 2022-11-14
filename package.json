@@ -1,0 +1,17 @@
+{
+  "name": "pixilabs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bilal Tariq",
+  "license": "ISC",
+  "dependencies": {
+    "pixi.js": "^5.3.12"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}

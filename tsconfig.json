@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",                       
+      "module": "es6",            
+       "declaration": true,                   
+       "declarationMap": true, 
+       "removeComments": true,               
+       "outDir": "src",                      
+       "rootDir": "./typescript",
+      "strict": true,  
+      "strictNullChecks":true,                        
+      "esModuleInterop": true,                  
+      "skipLibCheck": true,                     
+      "forceConsistentCasingInFileNames": true  
+    }
+}
