@@ -1,4 +1,3 @@
-
 // console.log("PIXI",PIXI);
 // The application will create a renderer using WebGL, if possible,
 // with a fallback to a canvas render. It will also setup the ticker
@@ -10,7 +9,7 @@ const app = new PIXI.Application();
 document.body.appendChild(app.view);
 
 // load the texture we need
-const texture = await PIXI.Assets.load('cat.jpg');
+const texture = await PIXI.Assets.load('../images/cat.jpg');
 
 // This creates a texture from a 'bunny.png' image
 const bunny = new PIXI.Sprite(texture);
