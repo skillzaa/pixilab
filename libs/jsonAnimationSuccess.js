@@ -1,28 +1,22 @@
 const app = new PIXI.Application({width:800,height:350, background: '#1099bb' });
 document.body.appendChild(app.view);
 
-
 // Add the assets to load
-let background;
-//--------------------------
-PIXI.Assets.add('background', '../images/background.png');
+// PIXI.Assets.add('background', '../images/background.png');
 
-const texturesPromise = PIXI.Assets.load(['background']);
+// const texturesPromise = PIXI.Assets.load(['background']);
 
-    texturesPromise.then((textures) => {
+//     texturesPromise.then((textures) => {
     
-    background = PIXI.Sprite.from(textures.background);
-    background.width = app.renderer.screen.width;
-    background.height = app.renderer.screen.height;
-    // app.stage.addChild(background);        
-    
-});
+//     const background = PIXI.Sprite.from(textures.background);
+//     background.width = app.renderer.screen.width;
+//     background.height = app.renderer.screen.height;
+
+//     app.stage.addChild(background);
+
+// });
 
 //////////////////////////
-
-const capGuyContainer = new PIXI.Container();
-
-let anim;
 
 PIXI.Assets.load("../images/capGuyAnimated/capGuy.json").then(() => {
     // create an array of textures from an image path
@@ -37,21 +31,19 @@ PIXI.Assets.load("../images/capGuyAnimated/capGuy.json").then(() => {
     }
 
     // create an AnimatedSprite (brings back memories from the days of Flash, right ?)
-     anim = new PIXI.AnimatedSprite(frames);
+    const anim = new PIXI.AnimatedSprite(frames);
 
     /*
      * An AnimatedSprite inherits all the properties of a PIXI sprite
      * so you can change its position, its anchor, mask it, etc
      */
-    // anim.width = 50;
-    // anim.height = 50;
     anim.x = 100;
     anim.y = 10;
     // anim.anchor.set(0.5);
     anim.animationSpeed = 0.15;
     anim.play();
-    capGuyContainer.addChild(anim);
+
+    app.stage.addChild(anim);
+
 
 });
-
-app.stage.addChild(capGuyContainer);

@@ -9,6 +9,7 @@
   "author": "Bilal Tariq",
   "license": "ISC",
   "dependencies": {
+    "@pixi/graphics-extras": "^7.0.4",
     "pixi.js": "^5.3.12"
   },
   "devDependencies": {
