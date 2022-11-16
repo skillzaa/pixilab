@@ -24209,6 +24209,7 @@ var PIXI = (function (exports) {
   
   })({});
   //# sourceMappingURL=pixi.js.map
+// import { Application } from "pixi.js"; 
 
 const Application = PIXI.Application;
 const Sprite = PIXI.Sprite;

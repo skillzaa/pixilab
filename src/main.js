@@ -1,5 +1,18 @@
-// import { Application } from "pixi.js"; 
-import {Application,Sprite,Container,Texture,Assets,AnimatedSprite}  from "./pixiWrapper.js";
+// import {Application,Sprite,Container,Texture,Assets,AnimatedSprite}  from "./pixiWrapper.js";
+
+///////////////////////////////////////////////////
+// import { Application,Sprite,Container,Texture,Assets,AnimatedSprite } from "pixi.js"; 
+
+const Application = PIXI.Application;
+const Sprite = PIXI.Sprite;
+const Container = PIXI.Container;
+const Texture = PIXI.Texture;
+const Assets = PIXI.Assets;
+const AnimatedSprite = PIXI.AnimatedSprite;
+///////////////////////////////////////////////////
+
+
+
 
 const app = new Application({width:800,height:350, background: '#1099bb' });
 
