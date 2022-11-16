@@ -1,25 +1,13 @@
-// import {Application,Sprite,Container,Texture,Assets,AnimatedSprite}  from "./pixiWrapper.js";
-
 ///////////////////////////////////////////////////
 import { Application,Sprite,Container,Texture,Assets,AnimatedSprite } from "pixi.js"; 
-
-// const Application = PIXI.Application;
-// const Sprite = PIXI.Sprite;
-// const Container = PIXI.Container;
-// const Texture = PIXI.Texture;
-// const Assets = PIXI.Assets;
-// const AnimatedSprite = PIXI.AnimatedSprite;
-///////////////////////////////////////////////////
-
-
-
 
 const app = new Application({width:800,height:350, background: '#1099bb' });
 // app.stage.addChild()
 document.body.appendChild(app.view);
 
 const bgTex = Texture.from('../images/background.png');
-//--the damn thing works with none-other than webpack and that too without congif file !!!!- I have 2 of my 3 req completed 1: auto import of commonJs file to the bundle 2: context sensitive help remaining is typescript
+
+
 const background = new Sprite(bgTex);
 background.width = app.renderer.screen.width;
 background.height = app.renderer.screen.height;
