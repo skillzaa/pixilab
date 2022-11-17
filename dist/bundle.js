@@ -1221,6 +1221,25 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ }),
 
+/***/ "./src/hello.ts":
+/*!**********************!*\
+  !*** ./src/hello.ts ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ hello)
+/* harmony export */ });
+function hello() {
+    console.log("hello + hi");
+    return "hi";
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/url/node_modules/punycode/punycode.js":
 /*!************************************************************!*\
   !*** ./node_modules/url/node_modules/punycode/punycode.js ***!
@@ -32633,8 +32652,14 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _hello_ts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hello.ts */ "./src/hello.ts");
 ///////////////////////////////////////////////////
  
+
+
+
+(0,_hello_ts__WEBPACK_IMPORTED_MODULE_1__["default"])();
+
 
 const app = new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Application({width:800,height:350, background: '#1099bb' });
 // app.stage.addChild()

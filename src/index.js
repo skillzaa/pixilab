@@ -1,6 +1,11 @@
 ///////////////////////////////////////////////////
 import { Application,Sprite,Container,Texture,Assets,AnimatedSprite } from "pixi.js"; 
 
+import hello from "./hello.ts";
+
+hello();
+
+
 const app = new Application({width:800,height:350, background: '#1099bb' });
 // app.stage.addChild()
 document.body.appendChild(app.view);
